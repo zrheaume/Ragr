@@ -1,0 +1,35 @@
+<div class='container'>
+    <div class="row">
+        <div class="col s12 center-align">
+            <h4>sign up for ragr</h4>
+        </div>
+    </div>
+    <div class="card-panel blue-grey darken-1 white-text">
+        <div class="row">
+            <div class="col s12 center-align">
+                <h5>{{header}}</h5>
+                <p>{{desc}}</p><br>
+            </div>
+        </div>
+            {{#each form}}
+            <div class="row">
+                <div class="input-field col s12">
+                    <select class="white-text" id={{this.ID}}>
+                        <option value="" class="white-text" disabled selected>{{this.default}}</option>
+                        {{#each this.options}}
+                        <option value={{this.value}} class="white-text">{{this.text}}</option>
+                        {{/each}}
+                    </select>
+                    <label class="white-text">{{this.label}}</label>
+                </div>
+            </div>
+            {{/each}}
+            <div class="card-action center-align">
+                <a class="waves-effect waves-light btn" id="submit-info">{{action}}</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+</div>

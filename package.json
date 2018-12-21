@@ -1,0 +1,29 @@
+{
+  "name": "Ragr",
+  "version": "1.0.0",
+  "description": "The \"Dating App\" of parties! Enter some information about yourself, and throw a Ragr!",
+  "main": "serve.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zrheaume/Ragr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zrheaume/Ragr/issues"
+  },
+  "homepage": "https://github.com/zrheaume/Ragr#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "inquirer": "^6.2.1",
+    "moment": "^2.23.0",
+    "mysql": "^2.16.0",
+    "path": "^0.12.7"
+  }
+}

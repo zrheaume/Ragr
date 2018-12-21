@@ -1,0 +1,26 @@
+<div class='container'>
+    <div class= "row">
+        <div class="col s12 center-align">
+            <h4>sign up for ragr</h4>
+        </div>
+    </div>
+    <div class="card-panel blue-grey darken-1 white-text">
+        <div class="row">
+            <div class="col s12 center-align">
+                <h5>{{header}}</h5>
+                <p>{{desc}}</p><br>
+                {{#each form}}
+                    <div class="form-item">
+                        <div class="input-field white-text">
+                            <input id={{this.ID}} type={{this.type}} class="validate white-text" placeholder={{this.placeholder}}>
+                            <label for={{this.ID}} class="white-text">{{this.label}}</label>
+                        </div>
+                    </div>
+                {{/each}}
+                <div class="card-action center-align">
+                    <a class="waves-effect waves-light btn" id="submit-info" >{{action}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
